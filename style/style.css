@@ -1,0 +1,168 @@
+  @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Roboto:wght@300&display=swap');
+
+.animate-character{
+  background-image: linear-gradient(
+    -225deg,
+    #ece8e1 0%,
+    #c720b9 17%,
+    #dda41f 34%,
+    #eddcdc 50%,
+    #dda41f 67%,
+    #c720b9 83%,
+     #ece8e1 100%
+  );
+
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+footer {
+  position:static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  }
+
+.picc {
+  width: 200px; /* Ajustez la largeur selon vos besoins */
+  height: 200px; /* Ajustez la hauteur selon vos besoins */
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+h1 { 
+  font-family: 'Grand Hotel', cursive;
+  }
+
+.nav-item{
+  font-family: 'Roboto', sans-serif;
+  }
+
+.navbar li{
+  margin-bottom:15px;
+}
+
+.lastitems {
+margin-top: 200px;
+} 
+
+.picc2 {
+  width: 30px; /* Ajustez la largeur selon vos besoins */
+  height: 30px; /* Ajustez la hauteur selon vos besoins */
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.picc3 {
+  width: 380px; /* Ajustez la largeur selon vos besoins */
+  height: 380px; /* Ajustez la hauteur selon vos besoins */
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.promodif{
+  font-size: 400%;
+  color: black;
+}
+
+.custom-image {
+  height: 300px; /* Ajustez la hauteur comme vous le souhaitez */
+  width: 100%;  /* Ajuster la largeur comme vous le souhaitez */
+  object-fit: cover; /* Ajuste la façon dont l'image est ajustée dans la boîte */
+}
+
+
+
+
+ul li:hover {
+  background-color: rgb(237, 240, 241);
+  border-radius: 10%;
+
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 1;
+  position: fixed;
+  top: 0; right: 0;
+  bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(133, 146, 144, 0.7);
+  transition: all .6s;
+}
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.modal_content {
+  border-radius: 15px;
+  position: relative;
+  width: 700px;
+  max-width: 90%;
+  background: white;
+  padding: 1.5em 2em;
+  display: flex;
+}
+
+.modal_close {
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+
+  font-size: 70px;
+}
+
+.stickynavbar{
+  position: fixed;
+}
+
+.formupdate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.inputupdate[type="file"] {
+  margin-bottom: 10px;
+}
+
+.buttonupdate {
+  background-color: #000209;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttonupdate:hover {
+  background-color:aqua;
+}
